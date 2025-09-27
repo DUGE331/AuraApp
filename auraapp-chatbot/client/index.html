@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AuraApp - Add Player</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Add Player</a> |
+    <a href="admin.html">Player Query</a>
+  </nav>
+
+  <div class="form-container">
+    <h1>Add Your Player Info</h1>
+    <form id="addPlayerForm">
+      <label for="username">Player Name:</label>
+      <input type="text" id="username" placeholder="Enter player username" required>
+
+      <label for="score">Score:</label>
+      <input type="number" id="score" placeholder="Enter score" required>
+
+      <button type="submit">Add Player</button>
+    </form>
+    <div id="result"></div>
+  </div>
+
+  <script src="js/add-player.js"></script>
+</body>
+</html>

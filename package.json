@@ -1,0 +1,18 @@
+{
+  "name": "auraapp",
+  "version": "1.0.0",
+  "description": "AuraApp Player Score Management System",
+  "main": "auraapp-chatbot/server.js",
+  "scripts": {
+    "install-deps": "cd auraapp-chatbot && npm install",
+    "start": "cd auraapp-chatbot && npm start",
+    "dev": "cd auraapp-chatbot && npm run dev",
+    "test": "cd auraapp-chatbot && npm test",
+    "lint": "cd auraapp-chatbot && npm run lint",
+    "setup": "cp auraapp-chatbot/.env.example auraapp-chatbot/.env && echo 'Please edit .env file with your AWS credentials'",
+    "test-connection": "cd auraapp-chatbot && node -e \"require('dotenv').config(); require('./config/awsConfig').testConnections().then(() => console.log('✅ All connections working')).catch(e => console.error('❌ Connection failed:', e.message))\""
+  },
+  "keywords": ["auraapp", "player", "scores", "aws", "dynamodb"],
+  "author": "",
+  "license": "ISC"
+}
